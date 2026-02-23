@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart — LearnFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon">⚡</div>
+            Learn<span>Flow</span>
+          </a>
+          <div class="nav-categories">
+            <a href="#">Categories <span class="arrow">▾</span></a>
+            <div class="dropdown-menu">
+              <a href="courses.html"
+                ><div class="cat-icon">💻</div>
+                Development</a
+              >
+              <a href="courses.html"
+                ><div class="cat-icon">📊</div>
+                Business</a
+              >
+              <a href="courses.html"
+                ><div class="cat-icon">🎨</div>
+                Design</a
+              >
+            </div>
+          </div>
+          <div class="nav-search">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔍</span>
+              <input type="text" placeholder="Search for courses..." />
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="services.html">Services</a>
+          </div>
+          <div class="nav-actions">
+            <a href="cart.html" class="cart-icon"
+              >🛒<span class="cart-badge">2</span></a
+            >
+            <a href="#" class="btn btn-outline btn-sm">Log In</a>
+            <a href="#" class="btn btn-primary btn-sm">Sign Up</a>
+          </div>
+          <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="container">
+        <div class="page-header-inner">
+          <h1>🛒 Shopping Cart</h1>
+          <p style="color: rgba(255, 255, 255, 0.65); margin-top: 8px">
+            Review your selected courses before checkout.
+          </p>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="sep">›</span>
+            <span class="current">Cart</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CART LAYOUT -->
+    <div class="container">
+      <div class="cart-layout">
+        <!-- CART ITEMS -->
+        <div class="cart-items">
+          <div class="cart-header">
+            <h2>Your Courses <span>(2 items)</span></h2>
+            <a
+              href="courses.html"
+              style="font-size: 0.88rem; color: var(--primary-light)"
+              >+ Add more courses</a
+            >
+          </div>
+
+          <!-- Item 1 -->
+          <div class="cart-item">
+            <div
+              class="cart-thumb"
+              style="background: linear-gradient(135deg, #4c1d95, #7c3aed)"
+            >
+              💻
+            </div>
+            <div class="cart-item-details">
+              <a href="course-details.html">
+                <h3 class="cart-item-title">
+                  The Complete Web Developer Bootcamp 2026
+                </h3>
+              </a>
+              <div class="cart-item-instructor">By Alex Johnson</div>
+              <div class="cart-item-meta">
+                <span class="badge badge-gold">Bestseller</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted)"
+                  >⏱ 42 hours</span
+                >
+                <span style="font-size: 0.8rem; color: var(--text-muted)"
+                  >📚 183 lectures</span
+                >
+              </div>
+              <div class="stars" style="margin-top: 8px; font-size: 0.82rem">
+                ★★★★★
+                <span
+                  style="
+                    font-size: 0.78rem;
+                    color: var(--text-muted);
+                    margin-left: 4px;
+                  "
+                  >(12,432 ratings)</span
+                >
+              </div>
+            </div>
+            <div class="cart-item-actions">
+              <span class="cart-item-price">NPR.19.99</span>
+              <div style="text-align: right">
+                <div
+                  style="
+                    font-size: 0.78rem;
+                    color: var(--text-muted);
+                    text-decoration: line-through;
+                    margin-bottom: 2px;
+                  "
+                >
+                  NPR.99.99
+                </div>
+                <span class="remove-btn">🗑 Remove</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="cart-item">
+            <div
+              class="cart-thumb"
+              style="background: linear-gradient(135deg, #065f46, #10b981)"
+            >
+              📊
+            </div>
+            <div class="cart-item-details">
+              <a href="course-details.html">
+                <h3 class="cart-item-title">
+                  Data Science & Machine Learning with Python
+                </h3>
+              </a>
+              <div class="cart-item-instructor">By Sarah Chen</div>
+              <div class="cart-item-meta">
+                <span class="badge badge-green">New</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted)"
+                  >⏱ 56 hours</span
+                >
+                <span style="font-size: 0.8rem; color: var(--text-muted)"
+                  >📚 210 lectures</span
+                >
+              </div>
+              <div class="stars" style="margin-top: 8px; font-size: 0.82rem">
+                ★★★★★
+                <span
+                  style="
+                    font-size: 0.78rem;
+                    color: var(--text-muted);
+                    margin-left: 4px;
+                  "
+                  >(8,219 ratings)</span
+                >
+              </div>
+            </div>
+            <div class="cart-item-actions">
+              <span class="cart-item-price">NPR.24.99</span>
+              <div style="text-align: right">
+                <div
+                  style="
+                    font-size: 0.78rem;
+                    color: var(--text-muted);
+                    text-decoration: line-through;
+                    margin-bottom: 2px;
+                  "
+                >
+                  NPR.129.99
+                </div>
+                <span class="remove-btn">🗑 Remove</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wishlist section -->
+          <div style="margin-top: 36px">
+            <h3
+              style="
+                font-size: 1.05rem;
+                margin-bottom: 16px;
+                color: var(--text-primary);
+              "
+            >
+              Saved for Later
+            </h3>
+
+            <div class="cart-item" style="opacity: 0.75">
+              <div
+                class="cart-thumb"
+                style="background: linear-gradient(135deg, #be185d, #ec4899)"
+              >
+                🎨
+              </div>
+              <div class="cart-item-details">
+                <h3 class="cart-item-title">
+                  UI/UX Design Mastery: Figma to Prototype
+                </h3>
+                <div class="cart-item-instructor">By Maria Rodriguez</div>
+                <div class="cart-item-meta">
+                  <span style="font-size: 0.8rem; color: var(--text-muted)"
+                    >⏱ 38 hours</span
+                  >
+                </div>
+              </div>
+              <div class="cart-item-actions">
+                <span class="cart-item-price">NPR.17.99</span>
+                <a
+                  href="#"
+                  class="btn btn-outline btn-sm"
+                  style="font-size: 0.75rem; padding: 6px 12px"
+                  >Move to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Promo section -->
+          <div
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(91, 33, 182, 0.06),
+                rgba(168, 85, 247, 0.06)
+              );
+              border: 1px solid rgba(124, 58, 237, 0.15);
+              border-radius: var(--radius);
+              padding: 20px;
+              margin-top: 24px;
+            "
+          >
+            <h4 style="font-size: 0.95rem; margin-bottom: 4px">
+              🎁 Apply a Coupon Code
+            </h4>
+            <p
+              style="
+                font-size: 0.82rem;
+                color: var(--text-muted);
+                margin-bottom: 14px;
+              "
+            >
+              Have a discount code? Enter it below to save more!
+            </p>
+            <div class="coupon-form">
+              <input
+                type="text"
+                class="coupon-input"
+                placeholder="e.g. LEARN20"
+              />
+              <a href="#" class="btn btn-primary btn-sm">Apply</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CART SUMMARY -->
+        <div class="cart-summary">
+          <h3 class="summary-title">Order Summary</h3>
+
+          <div class="summary-row">
+            <span>Original Price</span>
+            <span
+              style="text-decoration: line-through; color: var(--text-muted)"
+              >NPR.229.98</span
+            >
+          </div>
+          <div class="summary-row">
+            <span>Discount</span>
+            <span class="summary-discount">-NPR.185.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Coupon (—)</span>
+            <span style="color: var(--text-muted)">Not applied</span>
+          </div>
+          <div class="summary-row">
+            <span>Tax</span>
+            <span>NPR.0.00</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span class="amount">NPR.44.98</span>
+          </div>
+
+          <a href="#" class="btn btn-primary checkout-btn">
+            🔒 Checkout Securely
+          </a>
+
+          <p class="summary-note">
+            By completing your purchase, you agree to our<br />
+            <a href="#" style="color: var(--primary-light)">Terms of Service</a>
+            and
+            <a href="#" style="color: var(--primary-light)">Refund Policy</a>.
+          </p>
+
+          <div
+            style="
+              border-top: 1px solid var(--border-light);
+              padding-top: 16px;
+              margin-top: 4px;
+            "
+          >
+            <p
+              style="
+                font-size: 0.8rem;
+                color: var(--text-muted);
+                text-align: center;
+                margin-bottom: 12px;
+                font-weight: 600;
+              "
+            >
+              We Accept
+            </p>
+            <div
+              style="
+                display: flex;
+                gap: 8px;
+                justify-content: center;
+                flex-wrap: wrap;
+              "
+            >
+              <span
+                style="
+                  background: var(--border-light);
+                  padding: 6px 12px;
+                  border-radius: 6px;
+                  font-size: 0.75rem;
+                  font-weight: 600;
+                  color: var(--text-secondary);
+                "
+                >💳 Visa</span
+              >
+              <span
+                style="
+                  background: var(--border-light);
+                  padding: 6px 12px;
+                  border-radius: 6px;
+                  font-size: 0.75rem;
+                  font-weight: 600;
+                  color: var(--text-secondary);
+                "
+                >💳 Mastercard</span
+              >
+              <span
+                style="
+                  background: var(--border-light);
+                  padding: 6px 12px;
+                  border-radius: 6px;
+                  font-size: 0.75rem;
+                  font-weight: 600;
+                  color: var(--text-secondary);
+                "
+                >🅿️ PayPal</span
+              >
+              <span
+                style="
+                  background: var(--border-light);
+                  padding: 6px 12px;
+                  border-radius: 6px;
+                  font-size: 0.75rem;
+                  font-weight: 600;
+                  color: var(--text-secondary);
+                "
+                >₿ Crypto</span
+              >
+            </div>
+          </div>
+
+          <div
+            style="
+              border-top: 1px solid var(--border-light);
+              padding-top: 16px;
+              margin-top: 16px;
+            "
+          >
+            <div style="text-align: center">
+              <div style="font-size: 1.5rem; margin-bottom: 6px">🛡️</div>
+              <p
+                style="
+                  font-size: 0.82rem;
+                  font-weight: 700;
+                  color: var(--text-primary);
+                  margin-bottom: 4px;
+                "
+              >
+                30-Day Money-Back Guarantee
+              </p>
+              <p
+                style="
+                  font-size: 0.78rem;
+                  color: var(--text-muted);
+                  line-height: 1.5;
+                "
+              >
+                Not satisfied? Get a full refund within 30 days, no questions
+                asked.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECOMMENDED -->
+    <section style="background: var(--border-light); padding: 60px 0">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-tag">💡 Recommended</div>
+            <h2 class="section-title">You Might Also <span>Like</span></h2>
+          </div>
+          <a href="courses.html" class="btn btn-outline">Browse All →</a>
+        </div>
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-thumb">
+              <div
+                class="course-thumb-placeholder"
+                style="background: linear-gradient(135deg, #1e40af, #3b82f6)"
+              >
+                ⚛️
+              </div>
+              <span class="course-badge badge badge-gold">Bestseller</span>
+            </div>
+            <div class="course-body">
+              <div class="course-category">Development</div>
+              <h3 class="course-title">
+                React & Next.js: The Complete Guide 2026
+              </h3>
+              <div class="course-instructor">Lisa Park</div>
+              <div class="course-rating">
+                <span class="rating-num">4.8</span>
+                <div class="stars">★★★★★</div>
+                <span class="rating-count">(10,876)</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price">
+                  <span class="price-current">NPR.22.99</span
+                  ><span class="price-original">NPR.109.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-thumb">
+              <div
+                class="course-thumb-placeholder"
+                style="background: linear-gradient(135deg, #5b21b6, #a855f7)"
+              >
+                🤖
+              </div>
+            </div>
+            <div class="course-body">
+              <div class="course-category">Development</div>
+              <h3 class="course-title">
+                AI & ChatGPT: Prompt Engineering Masterclass
+              </h3>
+              <div class="course-instructor">Emma Scott</div>
+              <div class="course-rating">
+                <span class="rating-num">4.9</span>
+                <div class="stars">★★★★★</div>
+                <span class="rating-count">(7,234)</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price">
+                  <span class="price-current">NPR.21.99</span
+                  ><span class="price-original">NPR.99.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-thumb">
+              <div
+                class="course-thumb-placeholder"
+                style="background: linear-gradient(135deg, #92400e, #f59e0b)"
+              >
+                📣
+              </div>
+            </div>
+            <div class="course-body">
+              <div class="course-category">Marketing</div>
+              <h3 class="course-title">
+                Digital Marketing Complete: SEO, Ads & Social
+              </h3>
+              <div class="course-instructor">James Wilson</div>
+              <div class="course-rating">
+                <span class="rating-num">4.6</span>
+                <div class="stars">★★★★☆</div>
+                <span class="rating-count">(9,876)</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price">
+                  <span class="price-current">NPR.14.99</span
+                  ><span class="price-original">NPR.79.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-thumb">
+              <div
+                class="course-thumb-placeholder"
+                style="background: linear-gradient(135deg, #0f766e, #14b8a6)"
+              >
+                🔐
+              </div>
+            </div>
+            <div class="course-body">
+              <div class="course-category">IT & Software</div>
+              <h3 class="course-title">
+                Ethical Hacking & Cybersecurity Fundamentals
+              </h3>
+              <div class="course-instructor">Daniel Lee</div>
+              <div class="course-rating">
+                <span class="rating-num">4.7</span>
+                <div class="stars">★★★★☆</div>
+                <span class="rating-count">(4,521)</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price">
+                  <span class="price-current">NPR.18.99</span
+                  ><span class="price-original">NPR.94.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo">
+              <div class="logo-icon">⚡</div>
+              Learn<span style="color: var(--accent)">Flow</span>
+            </div>
+            <p>
+              Empowering learners worldwide with high-quality, accessible online
+              education.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">𝕏</a
+              ><a href="#" class="social-link">in</a>
+              <a href="#" class="social-link">f</a
+              ><a href="#" class="social-link">▶</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Learn</h4>
+            <ul>
+              <li><a href="courses.html">All Courses</a></li>
+              <li><a href="#">Certifications</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 LearnFlow, Inc. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy</a><a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses — LearnFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon">⚡</div>
+            Learn<span>Flow</span>
+          </a>
+          <div class="nav-categories">
+            <a href="#">Categories <span class="arrow">▾</span></a>
+            <div class="dropdown-menu">
+              <a href="#"
+                ><div class="cat-icon">💻</div>
+                Development</a
+              >
+              <a href="#"
+                ><div class="cat-icon">📊</div>
+                Business</a
+              >
+              <a href="#"
+                ><div class="cat-icon">🎨</div>
+                Design</a
+              >
+              <a href="#"
+                ><div class="cat-icon">📣</div>
+                Marketing</a
+              >
+              <a href="#"
+                ><div class="cat-icon">🔧</div>
+                IT & Software</a
+              >
+            </div>
+          </div>
+          <div class="nav-search">
+            <div class="search-input-wrap">
+              <span class="search-icon">🔍</span>
+              <input
+                type="text"
+                placeholder="Search for courses, skills, instructors..."
+              />
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+          </div>
+          <div class="nav-actions">
+            <a href="cart.html" class="cart-icon"
+              >🛒<span class="cart-badge">2</span></a
+            >
+            <a href="#" class="btn btn-outline btn-sm">Log In</a>
+            <a href="#" class="btn btn-primary btn-sm">Sign Up</a>
+          </div>
+          <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="container">
+        <div class="page-header-inner">
+          <h1>All Courses</h1>
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.65);
+              margin-top: 8px;
+              font-size: 1rem;
+            "
+          >
+            Discover your next skill from 10,000+ expert-led courses
+          </p>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="sep">›</span>
+            <span class="current">Courses</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COURSES LAYOUT -->
+    <div class="container">
+      <div class="courses-page-layout">
+        <!-- FILTER SIDEBAR -->
+        <aside class="filter-sidebar">
+          <div class="filter-card">
+            <div class="filter-title">
+              🔍 Filters
+              <span class="clear">Clear All</span>
+            </div>
+          </div>
+
+          <div class="filter-card">
+            <div class="filter-title">Category</div>
+            <div class="filter-option">
+              <input type="checkbox" id="dev" checked />
+              <label for="dev"
+                >Development <span class="filter-count">1,842</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="biz" />
+              <label for="biz"
+                >Business <span class="filter-count">954</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="design" />
+              <label for="design"
+                >Design <span class="filter-count">731</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="mkt" />
+              <label for="mkt"
+                >Marketing <span class="filter-count">615</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="it" />
+              <label for="it"
+                >IT & Software <span class="filter-count">489</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="photo" />
+              <label for="photo"
+                >Photography <span class="filter-count">312</span></label
+              >
+            </div>
+          </div>
+
+          <div class="filter-card">
+            <div class="filter-title">Skill Level</div>
+            <div class="filter-option">
+              <input type="checkbox" id="beginner" checked />
+              <label for="beginner"
+                >Beginner <span class="filter-count">3,210</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="intermediate" checked />
+              <label for="intermediate"
+                >Intermediate <span class="filter-count">2,890</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="advanced" />
+              <label for="advanced"
+                >Advanced <span class="filter-count">1,540</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="all-levels" />
+              <label for="all-levels"
+                >All Levels <span class="filter-count">2,360</span></label
+              >
+            </div>
+          </div>
+
+          <div class="filter-card">
+            <div class="filter-title">Rating</div>
+            <div class="rating-filter">
+              <input type="checkbox" id="r4half" checked />
+              <label for="r4half">
+                <div class="stars" style="font-size: 0.82rem">★★★★★</div>
+                <span style="font-size: 0.8rem; color: var(--text-muted)"
+                  >4.5 & up (3,240)</span
+                >
+              </label>
+            </div>
+            <div class="rating-filter">
+              <input type="checkbox" id="r4" />
+              <label for="r4">
+                <div class="stars" style="font-size: 0.82rem">★★★★☆</div>
+                <span style="font-size: 0.8rem; color: var(--text-muted)"
+                  >4.0 & up (5,410)</span
+                >
+              </label>
+            </div>
+            <div class="rating-filter">
+              <input type="checkbox" id="r3" />
+              <label for="r3">
+                <div class="stars" style="font-size: 0.82rem">★★★☆☆</div>
+                <span style="font-size: 0.8rem; color: var(--text-muted)"
+                  >3.0 & up (7,200)</span
+                >
+              </label>
+            </div>
+          </div>
+
+          <div class="filter-card">
+            <div class="filter-title">Price</div>
+            <div class="price-range">
+              <input type="range" min="0" max="200" value="50" />
+              <div class="price-range-labels">
+                <span>NPR.0</span>
+                <span>NPR.200</span>
+              </div>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="free" />
+              <label for="free"
+                >Free <span class="filter-count">412</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="paid" checked />
+              <label for="paid"
+                >Paid <span class="filter-count">9,588</span></label
+              >
+            </div>
+          </div>
+
+          <div class="filter-card">
+            <div class="filter-title">Duration</div>
+            <div class="filter-option">
+              <input type="checkbox" id="d1" />
+              <label for="d1"
+                >0-3 Hours <span class="filter-count">1,250</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="d2" checked />
+              <label for="d2"
+                >3-10 Hours <span class="filter-count">2,870</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="d3" checked />
+              <label for="d3"
+                >10-20 Hours <span class="filter-count">3,120</span></label
+              >
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="d4" />
+              <label for="d4"
+                >20+ Hours <span class="filter-count">2,760</span></label
+              >
+            </div>
+          </div>
+        </aside>
+
+        <!-- COURSES MAIN -->
+        <main class="courses-main">
+          <div class="courses-toolbar">
+            <div class="courses-count">
+              <strong>9,872</strong> results found
+            </div>
+            <div class="toolbar-actions">
+              <select class="sort-select">
+                <option>Most Popular</option>
+                <option>Highest Rated</option>
+                <option>Newest First</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+              </select>
+              <div class="view-toggle">
+                <div class="view-btn active">⊞</div>
+                <div class="view-btn">☰</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="courses-grid-main">
+            <div class="course-card">
+              <div class="course-thumb">
+                <div
+                  class="course-thumb-placeholder"
+                  style="background: linear-gradient(135deg, #4c1d95, #7c3aed)"
+                >
+                  💻
+                </div>
+                <span class="course-badge badge badge-gold">Bestseller</span>
+                <div class="course-wishlist">🤍</div>
+              </div>
+              <div class="course-body">
+                <div class="course-category">Development</div>
+                <a href="course-details.html"
+                  ><h3 class="course-title">
+                    The Complete Web Developer Bootcamp 2026
+                  </h3></a
+                >
+                <div class="course-instructor">Alex Johnson</div>
+                <div class="course-rating">
+                  <span class="rating-num">4.8</span>
+                  <div class="stars">★★★★★</div>
+                  <span class="rating-count">(12,432)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <span class="price-current">NPR.19.99</span>
+                    <span class="price-original">NPR.99.99</span>
+                  </div>
+                  <div class="course-meta-info">
+                    <span class="meta-chip">⏱ 42h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-thumb">
+                <div
+                  class="course-thumb-placeholder"
+                  style="background: linear-gradient(135deg, #065f46, #10b981)"
+                >
+                  📊
+                </div>
+                <span class="course-badge badge badge-green">New</span>
+                <div class="course-wishlist">🤍</div>
+              </div>
+              <div class="course-body">
+                <div class="course-category">Business</div>
+                <a href="course-details.html"
+                  ><h3 class="course-title">
+                    Data Science & Machine Learning with Python
+                  </h3></a
+                >
+                <div class="course-instructor">Sarah Chen</div>
+                <div class="course-rating">
+                  <span class="rating-num">4.9</span>
+                  <div class="stars">★★★★★</div>
+                  <span class="rating-count">(8,219)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <span class="price-current">NPR.24.99</span>
+                    <span class="price-original">NPR.129.99</span>
+                  </div>
+                  <div class="course-meta-info">
+                    <span class="meta-chip">⏱ 56h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-thumb">
+                <div
+                  class="course-thumb-placeholder"
+                  style="background: linear-gradient(135deg, #be185d, #ec4899)"
+                >
+                  🎨
+                </div>
+                <span class="course-badge badge badge-purple">Hot</span>
+                <div class="course-wishlist">🤍</div>
+              </div>
+              <div class="course-body">
+                <div class="course-category">Design</div>
+                <a href="course-details.html"
+                  ><h3 class="course-title">
+                    UI/UX Design Mastery: Figma to Prototype
+                  </h3></a
+                >
+                <div class="course-instructor">Maria Rodriguez</div>
+                <div class="course-rating">
+                  <span class="rating-num">4.7</span>
+                  <div class="stars">★★★★☆</div>
+                  <span class="rating-count">(6,104)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <span class="price-current">NPR.17.99</span>
+                    <span class="price-original">NPR.89.99</span>
+                  </div>
+                  <div class="course-meta-info">
+                    <span class="meta-chip">⏱ 38h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-thumb">
+                <div
+                  class="course-thumb-placeholder"
+                  style="background: linear-gradient(135deg, #1e40af, #3b82f6)"
+                >
+                  ⚛️
+                </div>
+                <span class="course-badge badge badge-gold">Bestseller</span>
+                <div class="course-wishlist">🤍</div>
+              </div>
+              <div class="course-body">
+                <div class="course-category">Development</div>
+                <a href="course-details.html"
+                  ><h3 class="course-title">
+                    React & Next.js: The Complete Guide 2026
+                  </h3></a
+                >
+                <div class="course-instructor">Lisa Park</div>
+                <div class="course-rating">
+                  <span class="rating-num">4.8</span>
+                  <div class="stars">★★★★★</div>
+                  <span class="rating-count">(10,876)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <span class="price-current">NPR.22.99</span>
+                    <span class="price-original">NPR.109.99</span>
+                  </div>
+                  <div class="course-meta-info">
+                    <span class="meta-chip">⏱ 48h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-thumb">
+                <div
+                  class="course-thumb-placeholder"
+                  style="background: linear-gradient(135deg, #92400e, #f59e0b)"
+                >
+                  📣
+                </div>
+                <div class="course-wishlist">🤍</div>
+              </div>
+              <div class="course-body">
+                <div class="course-category">Marketing</div>
+                <a href="course-details.html"
+                  ><h3 class="course-title">
+                    Digital Marketing Complete: SEO, Ads & Social Media
+                  </h3></a
+                >
+                <div class="course-instructor">James Wilson</div>
+                <div class="course-rating">
+                  <span class="rating-num">4.6</span>
+                  <div class="stars">★★★★☆</div>
+                  <span class="rating-count">(9,876)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <span class="price-current">NPR.14.99</span>
+                    <span class="price-original">NPR.79.99</span>
+                  </div>
+                  <div class="course-meta-info">
+                    <span class="meta-chip">⏱ 29h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-thumb">
+                <div
+                  class="course-thumb-placeholder"
+                  style="background: linear-gradient(135deg, #0f766e, #14b8a6)"
+                >
+                  🔐
+                </div>
+                <span class="course-badge badge badge-red">New</span>
+                <div class="course-wishlist">🤍</div>
+              </div>
+              <div class="course-body">
+                <div class="course-category">IT & Software</div>
+                <a href="course-details.html"
+                  ><h3 class="course-title">
+                    Ethical Hacking & Cybersecurity Fundamentals
+                  </h3></a
+                >
+                <div class="course-instructor">Daniel Lee</div>
+                <div class="course-rating">
+                  <span class="rating-num">4.7</span>
+                  <div class="stars">★★★★☆</div>
+                  <span class="rating-count">(4,521)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <span class="price-current">NPR.18.99</span>
+                    <span class="price-original">NPR.94.99</span>
+                  </div>
+                  <div class="course-meta-info">
+                    <span class="meta-chip">⏱ 33h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-thumb">
+                <div
+                  class="course-thumb-placeholder"
+                  style="background: linear-gradient(135deg, #5b21b6, #a855f7)"
+                >
+                  🤖
+                </div>
+                <span class="course-badge badge badge-purple">Hot</span>
+                <div class="course-wishlist">🤍</div>
+              </div>
+              <div class="course-body">
+                <div class="course-category">Development</div>
+                <a href="course-details.html"
+                  ><h3 class="course-title">
+                    AI & ChatGPT: Prompt Engineering Masterclass
+                  </h3></a
+                >
+                <div class="course-instructor">Emma Scott</div>
+                <div class="course-rating">
+                  <span class="rating-num">4.9</span>
+                  <div class="stars">★★★★★</div>
+                  <span class="rating-count">(7,234)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <span class="price-current">NPR.21.99</span>
+                    <span class="price-original">NPR.99.99</span>
+                  </div>
+                  <div class="course-meta-info">
+                    <span class="meta-chip">⏱ 27h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-thumb">
+                <div
+                  class="course-thumb-placeholder"
+                  style="background: linear-gradient(135deg, #7c2d12, #ea580c)"
+                >
+                  ☁️
+                </div>
+                <div class="course-wishlist">🤍</div>
+              </div>
+              <div class="course-body">
+                <div class="course-category">IT & Software</div>
+                <a href="course-details.html"
+                  ><h3 class="course-title">
+                    AWS Solutions Architect: From Zero to Certified
+                  </h3></a
+                >
+                <div class="course-instructor">Robert Chen</div>
+                <div class="course-rating">
+                  <span class="rating-num">4.6</span>
+                  <div class="stars">★★★★☆</div>
+                  <span class="rating-count">(5,812)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <span class="price-current">NPR.26.99</span>
+                    <span class="price-original">NPR.134.99</span>
+                  </div>
+                  <div class="course-meta-info">
+                    <span class="meta-chip">⏱ 61h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-thumb">
+                <div
+                  class="course-thumb-placeholder"
+                  style="background: linear-gradient(135deg, #166534, #22c55e)"
+                >
+                  📈
+                </div>
+                <span class="course-badge badge badge-green">Top Rated</span>
+                <div class="course-wishlist">🤍</div>
+              </div>
+              <div class="course-body">
+                <div class="course-category">Business</div>
+                <a href="course-details.html"
+                  ><h3 class="course-title">
+                    Financial Modeling & Valuation Analyst (FMVA)
+                  </h3></a
+                >
+                <div class="course-instructor">Tom Walker</div>
+                <div class="course-rating">
+                  <span class="rating-num">4.8</span>
+                  <div class="stars">★★★★★</div>
+                  <span class="rating-count">(3,917)</span>
+                </div>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <span class="price-current">NPR.29.99</span>
+                    <span class="price-original">NPR.149.99</span>
+                  </div>
+                  <div class="course-meta-info">
+                    <span class="meta-chip">⏱ 44h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAGINATION -->
+          <div class="pagination">
+            <div class="page-btn">‹</div>
+            <div class="page-btn active">1</div>
+            <div class="page-btn">2</div>
+            <div class="page-btn">3</div>
+            <div class="page-btn">4</div>
+            <div class="page-btn">5</div>
+            <div class="page-btn">›</div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo">
+              <div class="logo-icon">⚡</div>
+              Learn<span style="color: var(--accent)">Flow</span>
+            </div>
+            <p>
+              Empowering learners worldwide with high-quality, accessible online
+              education.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">𝕏</a>
+              <a href="#" class="social-link">in</a>
+              <a href="#" class="social-link">f</a>
+              <a href="#" class="social-link">▶</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Learn</h4>
+            <ul>
+              <li><a href="courses.html">All Courses</a></li>
+              <li><a href="#">Certifications</a></li>
+              <li><a href="#">For Teams</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 LearnFlow, Inc. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
